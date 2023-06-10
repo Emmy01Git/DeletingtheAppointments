@@ -39,7 +39,7 @@
       deleteButton.type = "button";
       deleteButton.value = "Delete";
       deleteButton.addEventListener("click", () => {
-        axios.delete("https://crudcrud.com/api/a6589632dc814fd5ad36f0af9e27f383/appointment/" + object._id)
+        axios.delete("https://crudcrud.com/api/75c742ac5a1f40bc9f63e2bd30d16f1a/appoint/" + object._id)
           .then(() => {
             li.remove();
           })
@@ -55,7 +55,7 @@
     }
 
     window.addEventListener("DOMContentLoaded", () => {
-      axios.get("https://crudcrud.com/api/a6589632dc814fd5ad36f0af9e27f383/appointment")
+      axios.get("https://crudcrud.com/api/75c742ac5a1f40bc9f63e2bd30d16f1a/appoint")
         .then((response) => {
           const userList = response.data;
           userList.forEach((user) => {
